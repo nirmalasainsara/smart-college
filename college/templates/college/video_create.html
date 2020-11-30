@@ -1,0 +1,6 @@
+{% block content %}
+<form method="Post" class="post-form">{% csrf_token %}
+    {{ form_video.as_p }}
+    <input type = 'submit' value = 'save'/>
+</form>
+{% endblock %}

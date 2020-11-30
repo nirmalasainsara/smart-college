@@ -1,0 +1,9 @@
+{% for paper in paperlist %}
+    <a href = "{{ paper.upload_paper.url }}">{{ paper.upload_paper }}</a>
+    <form method="POST" action="{% url 'college:paper_approved' paper.id %}">{% csrf_token %}
+        <input type= "radio" name="accept" id="accept" value="Accept"  >Accept
+        <input type= "radio" name="reject" id="reject" value="Reject"  >Reject
+        <input type= "submit"><br>
+    </form>
+    
+{% endfor %}    

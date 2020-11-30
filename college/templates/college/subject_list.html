@@ -1,0 +1,3 @@
+{% for subject in subjects %}
+    <a href = "{% url 'college:subject_detail' subject.id %}">{{ subject.subject_name }}</a>
+{% endfor %}

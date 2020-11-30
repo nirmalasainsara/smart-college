@@ -1,0 +1,8 @@
+
+{% block content %}
+<form method="Post" class="post-form">{% csrf_token %}
+    {{ adminform.as_p }}
+    <input type = 'submit' value = 'save'/>
+</form>
+
+{% endblock %}

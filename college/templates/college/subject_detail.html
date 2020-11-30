@@ -1,0 +1,5 @@
+Detail of {{subject.subject_name}}
+
+<a href = "{% url 'college:material_paper' subject.id %}">Paper</a><br>
+<a href = "{% url 'college:material_notes' subject.id %}">Notes</a><br>
+<a href = "{% url 'college:material_video' subject.id %}">Video</a>

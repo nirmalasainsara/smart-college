@@ -1,0 +1,7 @@
+{% for category in categories %}
+    <a href = "{{ category.id }}">{{ category.college_degree }}</a><br>
+    
+{% endfor %}
+<a href = "{% url 'college:paper_create' %}">Upload New Papers</a><br>
+<a href = "{% url 'college:notes_create' %}">Upload New Notes</a><br>
+<a href = "{% url 'college:video_create' %}">Upload New videos</a>
